@@ -28,13 +28,21 @@
 				<configuration>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
 									
-					 <deploymentType>standalone</deploymentType>
+			 
+				</configuration>
+				</plugin>
+				<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-app-maven-plugin</artifactId>
+				<version>${mule.tools.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<deploymentType>standalone</deploymentType>
 					 <muleVersion>${mule.version}</muleVersion> 
 					 <muleHome>\\172.21.10.79\Mulesoft\mule-enterprise-standalone-3.9.1</muleHome> 
 					 <applicationName>muletesting</applicationName> 
-					 
-				</configuration>
- <executions>
+					 </configuration>
+					 <executions>
  <execution>
  <id>deploy</id>
  <phase>deploy</phase>
@@ -43,6 +51,8 @@
  </goals>
  </execution>
  </executions>
+				
+ 
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
