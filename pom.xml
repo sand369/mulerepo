@@ -223,5 +223,20 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
-
+   <distributionManagement>
+		<!--<repository>
+			<id>Exchange2-MulesoftServices</id>
+			<name>Exchange2 Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/${anypoint.org.id}/maven</url>
+			<layout>default</layout>
+		</repository>-->
+		<snapshotRepository>
+	  <id>nexus</id>
+      <url>http://172.21.10.77:8081/repository/lib-snapshot-local/</url>
+    </snapshotRepository>
+    <repository>
+	  <id>nexus</id>
+      <url>http://172.21.10.77:8081/repository/lib-releases-local/</url>
+    </repository>
+	</distributionManagement>
 </project>
