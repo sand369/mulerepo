@@ -39,7 +39,7 @@
 				<configuration>
 					<deploymentType>standalone</deploymentType>
 					 
-					 <muleHome>\\172.21.10.79\Mulesoft\mule-enterprise-standalone-3.9.1</muleHome> 
+					 <muleHome>//172.21.10.79/Mulesoft/mule-enterprise-standalone-3.9.1</muleHome> 
 					 <applicationName>muletesting</applicationName> 
 					 </configuration>
 					 <executions>
