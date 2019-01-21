@@ -27,7 +27,22 @@
 				<extensions>true</extensions>
 				<configuration>
                     <copyToAppsDirectory>true</copyToAppsDirectory>
+									
+					 <deploymentType>standalone</deploymentType>
+					 <muleVersion>${mule.version}</muleVersion> 
+					 <muleHome>\\172.21.10.79\Mulesoft\mule-enterprise-standalone-3.9.1</muleHome> 
+					 <applicationName>${artifactId}</applicationName> 
+					 
 				</configuration>
+ <executions>
+ <execution>
+ <id>deploy</id>
+ <phase>deploy</phase>
+ <goals>
+ <goal>deploy</goal>
+ </goals>
+ </execution>
+ </executions>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
