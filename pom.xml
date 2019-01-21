@@ -33,12 +33,12 @@
 				</plugin>
 				<plugin>
 				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>${mule.tools.version}</version>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>2.1.1</version>
 				<extensions>true</extensions>
 				<configuration>
 					<deploymentType>standalone</deploymentType>
-					 <muleVersion>${mule.version}</muleVersion> 
+					 
 					 <muleHome>\\172.21.10.79\Mulesoft\mule-enterprise-standalone-3.9.1</muleHome> 
 					 <applicationName>muletesting</applicationName> 
 					 </configuration>
