@@ -26,7 +26,7 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <copyToAppsDirectory>true</copyToAppsDirectory>
+                    <copyToAppsDirectory>false</copyToAppsDirectory>
 				</configuration>
 			</plugin>
 			<plugin> 
@@ -36,7 +36,7 @@
 				    <configuration>
 				        <deploymentType>standalone</deploymentType>
 				        <muleVersion>${mule.version}</muleVersion> 
-				        <muleHome>C:/Users/ravi.sandrana/Desktop/Muel/mule-enterprise-standalone-3.9.1</muleHome>
+				        <muleHome>//172.21.10.79/Mulesoft/mule-enterprise-standalone-3.9.1</muleHome>
                    </configuration>
 				    <executions>
 				        <execution>
@@ -235,5 +235,4 @@
 		<url>http://172.21.10.77:8081/repository/lib-releases-local/</url>
 	</repository>
 </distributionManagement>
-  
-</project>
+ </project>
