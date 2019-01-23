@@ -45,7 +45,7 @@
 						<id>deploy</id>
 						<phase>deploy</phase>
 						<goals>
-						 <goal>deploy</goal>
+						  <goal>deploy</goal>
 						</goals>
 					</execution>
 				</executions>
