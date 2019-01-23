@@ -37,14 +37,14 @@
 				<configuration>
 					<deploymentType>standalone</deploymentType>
 					<muleVersion>${mule.version}</muleVersion>
-					<muleHome>C:/Users/ravi.sandrana/Desktop/Muel/mule-enterprise-standalone-3.9.1</muleHome>
+					<muleHome>//172.21.10.79/Mulesoft/mule-enterprise-standalone-3.9.1</muleHome>
 				</configuration>
 				<executions>
 					<execution>
 						<id>deploy</id>
 						<phase>deploy</phase>
 						<goals>
-							<goal>deploy</goal>
+						 <goal>deploy</goal>
 						</goals>
 					</execution>
 				</executions>
