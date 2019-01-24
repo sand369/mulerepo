@@ -32,19 +32,23 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>2.1.1</version>
+				<version>2.2.1</version>
 				<configuration>
-					<deploymentType>standalone</deploymentType>
+					<deploymentType>cloudhub</deploymentType>
 					<muleVersion>${mule.version}</muleVersion>
-					<muleHome>//172.21.10.79/Mulesoft/mule-enterprise-standalone-3.9.1 </muleHome>
-					
+					<username>purna-cedar</username>
+					<password>Welcome@01</password>
+					<workerType>Micro</workerType>
+					<redeploy>true</redeploy>
+					<environment>Sandbox</environment>
+
 				</configuration>
 				<executions>
 					<execution>
 						<id>deploy</id>
 						<phase>deploy</phase>
 						<goals>
-						  <goal>deploy</goal>
+							<goal>deploy</goal>
 						</goals>
 					</execution>
 				</executions>
@@ -225,8 +229,8 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	 <distributionManagement>
-       <snapshotRepository>
+	<distributionManagement>
+		<snapshotRepository>
 			<id>nexus</id>
 			<url>http://172.21.10.77:8081/repository/lib-snapshot-local/</url>
 		</snapshotRepository>
