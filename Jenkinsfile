@@ -1,6 +1,4 @@
-pipeline {
-  agent any
-  stages {
+node {
 stage('Check Out'){
 git 'https://github.com/sand369/mulerepo.git'
 }
@@ -9,4 +7,4 @@ stage('Compile'){
   sh "${MVHome}/bin/mvn clean package"
 }
 }
-}
+
