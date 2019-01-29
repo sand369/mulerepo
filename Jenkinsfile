@@ -1,4 +1,6 @@
-node {
+pipeline {
+  agent any
+  stages {
 stage('Check Out'){
 git 'https://github.com/sand369/mulerepo.git'
 }
