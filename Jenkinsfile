@@ -2,6 +2,8 @@ node {
 stage('Check Out'){
 git 'https://github.com/sand369/mulerepo.git'
 }
-stage('Complie'){
+stage('Compile'){
+def MVHome = tool name: 'Maven', type: 'maven'
+  sh "${MVHome}/bin/mvn package"
 }
 }
