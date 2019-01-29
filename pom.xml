@@ -34,14 +34,11 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>2.2.1</version>
 				<configuration>
-					<deploymentType>cloudhub</deploymentType>
+					<deploymentType>standalone</deploymentType>
 					<muleVersion>${mule.version}</muleVersion>
-					<username>sand_369</username>
-					<password>Sand_123</password>
-					<workerType>Micro</workerType>
-					<redeploy>true</redeploy>
-					<environment>Sandbox</environment>
-
+					<muleHome>//172.21.10.79/Mulesoft/mule-enterprise-standalone-3.9.1 </muleHome>
+					<username>Aparna.Avilala</username>
+					<password>Sierracedar@123</password>
 				</configuration>
 				<executions>
 					<execution>
